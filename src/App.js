@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotals());
-  }, [cartItems]);
+  }, [cartItems, dispatch]);
 
   if (isLoading) {
     return (
